@@ -1,0 +1,39 @@
+{
+  "note": "Both RK4 step and controller update period are halved; this measures combined numerical/sampling sensitivity.",
+  "vector_checks": 30,
+  "refinement": [
+    {
+      "mission": "hover",
+      "coarse_dt_s": 0.01,
+      "fine_dt_s": 0.005,
+      "max_position_difference_m": 0.0,
+      "max_attitude_difference_deg": 0.0,
+      "max_rotor_speed_difference_radps": 0.0,
+      "energy_difference_Wh": 5.551115123125783e-14,
+      "all_fine_mission_checks_passed": true,
+      "refinement_check_passed": true
+    },
+    {
+      "mission": "circle",
+      "coarse_dt_s": 0.01,
+      "fine_dt_s": 0.005,
+      "max_position_difference_m": 1.368810711444013e-07,
+      "max_attitude_difference_deg": 5.292594496841482e-05,
+      "max_rotor_speed_difference_radps": 0.0016798349107034483,
+      "energy_difference_Wh": 3.1818991885756986e-12,
+      "all_fine_mission_checks_passed": true,
+      "refinement_check_passed": true
+    },
+    {
+      "mission": "sequence",
+      "coarse_dt_s": 0.01,
+      "fine_dt_s": 0.005,
+      "max_position_difference_m": 4.875880724200532e-05,
+      "max_attitude_difference_deg": 0.011884891103799115,
+      "max_rotor_speed_difference_radps": 0.8767338558194524,
+      "energy_difference_Wh": 7.029908167588417e-06,
+      "all_fine_mission_checks_passed": true,
+      "refinement_check_passed": true
+    }
+  ]
+}
