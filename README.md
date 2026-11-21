@@ -145,15 +145,4 @@ values are in metrics.json. If your team changes tolerances, retain the actual v
 ## Selected hardware and parameter basis
 
 `parameters.py` is the single source of physical parameters, controller gains, and
-limits. Both the mission runner and standalone hover check use it. Total mass is
-1.6069 kg; the calculated hover speed is 284.469 rad/s (2716.48 rpm).
-
-The selected motor/propeller combination is MN3110 KV470 with a 15-by-5-inch
-propeller on 4S. Manufacturer test data and specifications are available at
-https://store.tmotor.com/product/mn3110-motor-navigator-type.html .
-The thrust and drag-torque coefficients are the team's fitted values. Inertias
-come from the component model; rotor inertia, efficiencies, auxiliary power, and
-usable battery fraction retain the team's stated assumptions. The 0.30 N m
-torque limit is an approximate current-based estimate using the 15 A / 180 s
-rating and KV470. It is modeled as constant and is not a measured torque-speed
-envelope. Component selection does not remove these modeling approximations.
+limits. Both the mission runner and standalone hover check use it.
